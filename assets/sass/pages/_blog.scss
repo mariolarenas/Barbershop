@@ -1,0 +1,141 @@
+.container-fluid {
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+.navigation-bar {
+  background-color: $eerie-black !important;
+
+  &__brand {
+    height: auto;
+    width: 50px;
+  }
+}
+
+.header {
+  //background-image: url('');
+  background-image: url('/assets/images/post-image.jpg');
+  background-position: center;
+  background-size: cover;
+  color: $white;
+  display: table;
+  font-family: $secondary-font;
+  font-size: $font-size-x-large;
+  font-style: $secondary-font-italic;
+  font-weight: $secondary-font-black;
+  height: 600px;
+  text-align: center;
+
+  &__text {
+    display: table-cell;
+    padding: 0 65px;
+    vertical-align: middle;
+  }
+}
+
+.post {
+  font-size: $font-size-medium;
+  padding: 40px 40px 0;
+
+  &__date {
+    color: $nickel;
+    font-family: $secondary-font;
+    margin: 0 0 40px;
+  }
+
+  &__text {
+    font-family: $primary-font;
+    line-height: 2;
+  }
+
+  &__social {
+    height: 50px;
+    margin: 50px 0;
+    text-align: center;
+
+    @include laptop-view {
+      text-align: left;
+    }
+  }
+
+  @include laptop-view {
+    padding: 40px 60px 0;
+  }
+}
+
+.related {
+  border: 1px solid $platinum;
+  padding: 50px;
+
+  &__info {
+    padding: 20px 0 0;
+    text-align: center;
+
+    @include laptop-view {
+      display: inline-table;
+      margin: 0 0 0 50px;
+      padding: 0;
+      text-align: left;
+      vertical-align: middle;
+      width: 170px;
+    }
+  }
+
+  &__name {
+    color: $eerie-black;
+    font-family: $secondary-font;
+    font-size: $font-size-x-large;
+    font-style: $secondary-font-italic;
+    font-weight: $secondary-font-black;
+  }
+
+  &__name,
+  &__social,
+  &__site {
+    display: block;
+  }
+
+  &__bio {
+    display: none;
+
+    @include laptop-view {
+      margin: 0 0 0 50px;
+      display: inline-table;
+      vertical-align: middle;
+      width: calc(100% - 430px);
+    }
+  }
+}
+
+.navigation-pages {
+  background-color: $light-gray;
+
+  &__wrapper {
+    margin: 50px auto;
+    width: fit-content;
+  }
+}
+
+.footer {
+  background-color: $raisin-black;
+  display: table;
+  padding: 80px 0;
+  text-align: center;
+
+  &__logo-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  &__logo {
+    height: auto;
+    width: 50px;
+
+    @include laptop-view {
+      width: 80px;
+    }
+  }
+}

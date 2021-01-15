@@ -1,0 +1,6 @@
+// handle laptop size media query
+@mixin laptop-view {
+  @media (min-width: #{$min-laptop}) {
+    @content;
+  }
+}
