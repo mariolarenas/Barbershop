@@ -7934,7 +7934,7 @@ table {
     height: auto;
     width: 50px; }
 
-.header {
+header, .header {
   background-image: url("assets/images/post-image.jpg");
   background-position: center;
   background-size: cover;
