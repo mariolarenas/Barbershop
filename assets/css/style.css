@@ -7935,7 +7935,7 @@ table {
     width: 50px; }
 
 .header {
-  background-image: url("./assets/images/post-image.jpg");
+  background-image: url("https://raw.githubusercontent.com/mariolarenas/Barbershop/main/assets/images/post-image.jpg");
   background-position: center;
   background-size: cover;
   color: #FFF;
